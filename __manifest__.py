@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Corrección de Tipo de Fecha para Odoo 16',
-    'version': '16.0.1.0.0',
+    'name': 'Corrección de Tipo de Fecha en Work Entries',
+    'version': '18.0.1.0.0',
     'category': 'Human Resources',
-    'summary': 'Corrige errores de tipo en generación de work entries y manejo de nombres para Odoo 16',
+    'summary': 'Corrige tipos en generación de work entries y nombres',
     'description': """
-        Corrige múltiples errores en Odoo 16:
-        1. AssertionError: assert isinstance(date_start, datetime) en generación de work entries
-        2. IndexError: list index out of range en calc_afp_name_tr
-        Soluciones implementadas mediante herencia sin modificar archivos originales.
+        Corrige:
+        1. Tipos de fecha en generación de work entries
+        2. Manejo seguro de nombres en calc_afp_name_tr
     """,
     'author': 'Mario Roberto Gomez',
     'website': 'https://mrgomezsv.github.io',
+    'license': 'LGPL-3',
     'depends': [
         'hr_work_entry_contract',
         'hr_payroll',
@@ -21,4 +21,4 @@
     'installable': True,
     'auto_install': False,
     'application': False,
-} 
+}
