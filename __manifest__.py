@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 {
     'name': 'Corrección de Tipo de Fecha en Work Entries',
     'version': '20.0.1.0.0',
